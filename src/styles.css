@@ -4,9 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .calculator {
+    width: 18rem;
     background-color: #1C5176;
     padding: 2rem;
     border-radius: 0.7rem;
@@ -22,7 +24,12 @@ body {
     background-color: #2980B9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 40px;
-    border-radius: 0.5rem ;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: #1C5176 transparent;
 }
 
 .buttons {
@@ -48,4 +55,5 @@ body {
 
 .btn:active {
     background-color: black;
+    scale: 0.98;
 }
